@@ -1,0 +1,15 @@
+import React, { Component } from 'react'
+
+import RaisedButton from 'material-ui/RaisedButton'
+
+class ContentContainer extends Component {
+  render () {
+    return (
+      <div>
+        <RaisedButton label='Default' />
+      </div>
+    )
+  }
+}
+
+export default ContentContainer

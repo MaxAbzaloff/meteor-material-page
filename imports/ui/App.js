@@ -1,11 +1,14 @@
 import React from 'react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
+import ContentContainer from './ContentContainer'
 
 class App extends React.Component {
   render () {
     return (
-      <div>
-        App!
-      </div>
+      <MuiThemeProvider>
+        <ContentContainer />
+      </MuiThemeProvider>
     )
   }
 }
