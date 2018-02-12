@@ -1,0 +1,1 @@
+import { Tabs, Tab } from 'material-ui/Tabs'

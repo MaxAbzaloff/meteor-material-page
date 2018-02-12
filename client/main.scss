@@ -4,4 +4,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.side-menu {
+  height: 100vh;
+  background-color: aqua;
+  width: 550px;
 }
