@@ -11,7 +11,7 @@ class App extends React.Component {
       <MuiThemeProvider>
         <React.Fragment>
           <SideMenuContainer />
-          <ContentContainer />
+          <ContentContainer headerText='Project' />
           <ChatContainer />
         </React.Fragment>
       </MuiThemeProvider>

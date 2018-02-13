@@ -1,0 +1,39 @@
+.content {
+  // width: 81.8125%;
+  width: 2650 / 3200 * 100%;
+  height: 100vh;
+  display: inline-block;
+  vertical-align: top;
+
+  &__workspace {
+    width: 100%;
+  }
+}
+
+.content-header {
+  width: 100%;
+  padding-top: 99px;
+  box-sizing: border-box;
+  box-shadow: 1px 5px 10px #bbbdbf;
+
+  &__header {
+    color: #fff;
+    margin: 0px 0px 0px 50px;
+    display: inline-block;
+  }
+
+  &__icon {
+    float: right;
+    margin: 0px 50px 0px 0px;
+    color: white;
+  }
+
+  &__tabs {
+    margin-top: 80px;
+    text-align: left;
+  }
+
+  &__tab {
+    width: 230px;
+  }
+}

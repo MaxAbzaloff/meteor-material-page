@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
 
 import LastChats from './components/LastChats'
+import AddChat from './components/AddChat'
+import './ChatContainer.scss'
 
 class ChatContainer extends Component {
   render () {
     return (
       <div className='chat'>
-        <div className='chat__message'>
+        <div>
+          <i className='material-icons'>chat</i>
         </div>
         <LastChats />
-        <div className='chat__plus'>
-        </div>
-        <div className='footer'>
-        </div>
+        <AddChat className='chat__plus' />
+        <div className='footer chat__footer' />
+        {/* </div> */}
       </div>
     )
   }

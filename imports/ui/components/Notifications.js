@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Notifications = () => (
-  <div></div>
+  <div>
+    <i className='material-icons'>notifications</i>
+  </div>
 )
 
 export default Notifications

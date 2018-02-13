@@ -2,14 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
+$main-blue-color: #3e4eb8;
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
   box-sizing: border-box;
 }
 
-.side-menu {
-  height: 100vh;
-  background-color: aqua;
-  width: 550px;
+.header {
+  height: 250px;
+  background-color: $main-blue-color;
+}
+
+.footer {
+  background-color: #f0f2f6;
+  height: 160px;
+  position: fixed;
+  bottom: 0px;
+  margin: 0px;
+  border: none;
+  padding: 0px;  
 }
