@@ -1,0 +1,23 @@
+.task {
+  display: block;
+
+  &__flag {
+    background-color: gray;
+  }
+
+  &__detail {
+    color: gray;
+  }
+
+  &__log-data {
+    float: right;
+  }
+}
+
+.log-data {
+  display: inline-block;
+
+  &__block {
+    display: inline-block;
+  }
+}

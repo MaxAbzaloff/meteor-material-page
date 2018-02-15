@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 
 import { Tabs, Tab } from 'material-ui/Tabs'
-// import CustomTabs from './components/CustomTabs'
-// import Tasks from './components/Tasks'
+import TasksContainer from './TasksContainer'
 
 import './ContentContainer.scss'
 
@@ -30,7 +29,7 @@ class ContentContainer extends Component {
               overview
             </Tab>
             <Tab label='tasks' className='content-header__tab'>
-              tasks
+              <TasksContainer />
             </Tab>
             <Tab label='progress' className='content-header__tab'>
               progress

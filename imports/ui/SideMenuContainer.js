@@ -22,9 +22,9 @@ class SideMenuContainer extends Component {
           <Authorization className='side-header__button' />
         </div>
         <div className='side-content'>
-          <PojectsDashboard />
-          <MyTasks />
-          <TimeTracking />
+          <PojectsDashboard className='side-content__block' />
+          <MyTasks className='side-content__block' />
+          <TimeTracking className='side-content__block' />
         </div>
         <button className='footer side-menu__footer'>
           <span className='footer__icon'></span>

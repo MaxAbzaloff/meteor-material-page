@@ -22,4 +22,9 @@
   position: relative;
   box-shadow: 1px 20px 20px #e1e3e6;
   height: calc(100vh - 250px);
+
+  &__block {
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
 }
