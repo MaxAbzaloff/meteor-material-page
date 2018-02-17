@@ -1,0 +1,21 @@
+.dashboard {
+  &__ul {
+    list-style-type: none;
+    padding-left: 2rem;
+
+    &_item {
+      margin-top: 20 / 2160 * 100vh;
+      margin-bottom: 20 / 2160 * 100vh;
+    }
+
+    &_icon {
+      font-size: 1rem;
+    }
+
+    &_text {
+      margin-left: 40 / 3200 * 100vw;
+      position: relative;
+      top: -0.1rem;
+    }
+  }
+}

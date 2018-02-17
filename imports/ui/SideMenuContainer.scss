@@ -1,6 +1,15 @@
+@import 'constants';
+
+.blue {
+  color: #3e4eb8;
+}
+
+.yellow {
+  color: #f5a623;
+}
+
 .side-menu {
-  // width: 17.1875%;
-  width: 550 / 3200 * 100%;
+  width: $side-menu-width;
   height: 100vh;
   display: inline-block;
   vertical-align: top;
@@ -14,17 +23,42 @@
 .side-header {
   width: 100%;
   position: relative;
+  padding-top: $side-menu-header-padding-top;
+  padding-left: $side-menu-header-padding-left;
   box-shadow: 1px -20px 20px #3b4aaf;
+
+  &__avatar {
+    display: inline-block;
+  }
+
+  &__button {
+    display: inline-block;
+    color: white;
+  }
 }
 
 .side-content {
   width: 100%;
   position: relative;
   box-shadow: 1px 20px 20px #e1e3e6;
-  height: calc(100vh - 250px);
+  height: $side-menu-height;
 
   &__block {
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #efeff1;
+    padding-top: 65 / 2160 * 100vh;
+    padding-left: 60 / 3200 * 100vw;
+    padding-bottom: 65 / 2160 * 100vh;
+
+    &:last-child {
+      border: none;
+    }
+
+    &_header {
+      position: relative;
+      display: inline-block;
+      top: -0.3rem;
+      margin-left: 20 / 3200 * 100vw;
+    }
   }
 }

@@ -1,6 +1,7 @@
+@import 'constants';
+
 .content {
-  // width: 81.8125%;
-  width: 2650 / 3200 * 100%;
+  width: $content-width;
   height: 100vh;
   display: inline-block;
   vertical-align: top;
@@ -12,7 +13,7 @@
 
 .content-header {
   width: 100%;
-  padding-top: 99px;
+  padding-top: $header-padding-top;
   box-sizing: border-box;
   box-shadow: 1px 5px 10px #bbbdbf;
 
@@ -29,8 +30,7 @@
   }
 
   &__tabs {
-    margin-top: 80px;
-    text-align: left;
+    height: 4.5vh;
   }
 
   &__tab {

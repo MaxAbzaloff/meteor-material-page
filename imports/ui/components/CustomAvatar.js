@@ -2,9 +2,9 @@ import React from 'react'
 
 import Avatar from 'material-ui/Avatar'
 
-const CustomAvatar = ({src = ''}) => (
-  <div>
-    <Avatar src={src} />
+const CustomAvatar = ({src = '', className = '', size = 140, customStyles = {}}) => (
+  <div className={className}>
+    <Avatar src={src} style={customStyles} />
   </div>
 )
 

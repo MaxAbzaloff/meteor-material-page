@@ -1,8 +1,11 @@
 /* CSS declarations go here */
 
+@import '../imports/ui/constants';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
-$main-blue-color: #3e4eb8;
+.gray {
+  color: #dadfea;
+}
 
 * {
   box-sizing: border-box;
@@ -15,13 +18,13 @@ body {
 }
 
 .header {
-  height: 250px;
+  height: $header-height;
   background-color: $main-blue-color;
 }
 
 .footer {
   background-color: #f0f2f6;
-  height: 160px;
+  height: $footer-height;
   position: fixed;
   bottom: 0px;
   margin: 0px;

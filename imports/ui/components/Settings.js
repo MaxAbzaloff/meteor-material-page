@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Settings = () => (
-  <div>
+const Settings = ({className = ''}) => (
+  <div className={className}>
     <i className='material-icons'>settings</i>
   </div>
 )

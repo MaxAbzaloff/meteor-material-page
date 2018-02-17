@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MyTasks = () => (
-  <div>
-    <i className='material-icons'>today</i>
-    <span>{'my tasks'.toUpperCase()}</span>
+const MyTasks = ({className = ''}) => (
+  <div className={className} >
+    <i className='material-icons gray'>today</i>
+    <span className='side-content__block_header'>{'my tasks'.toUpperCase()}</span>
   </div>
 )
 

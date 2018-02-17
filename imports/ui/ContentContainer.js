@@ -11,7 +11,8 @@ class ContentContainer extends Component {
 
     this.state = {
       tabStyle: {
-        backgroundColor: '#3e4eb8'
+        backgroundColor: '#3e4eb8',
+        height: '4.5vh'
       },
       btnStyle: {
         width: '230px'
@@ -22,7 +23,7 @@ class ContentContainer extends Component {
     return (
       <div className='content'>
         <div className='content-header content__content-header header'>
-          <h3 className='content-header__header'>{this.props.headerText}</h3>
+          <h2 className='content-header__header'>{this.props.headerText}</h2>
           <i className='material-icons content-header__icon'>search</i>
           <Tabs className='content-header__tabs' tabItemContainerStyle={this.state.tabStyle}>
             <Tab label='overview' className='content-header__tab' buttonStyle={this.state.btnStyle}>

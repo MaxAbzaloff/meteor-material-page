@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Notifications = () => (
-  <div>
+const Notifications = ({className = ''}) => (
+  <div className={className}>
     <i className='material-icons'>notifications</i>
   </div>
 )

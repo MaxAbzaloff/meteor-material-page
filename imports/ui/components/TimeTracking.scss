@@ -1,0 +1,29 @@
+.aqua {
+  color: #48d3c2;
+}
+
+.pink {
+  color: #ffd1fb;
+}
+
+.time-tracking {
+  &__ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+
+    &_item {
+      margin-top: 20 / 2160 * 100vh;
+      margin-bottom: 20 / 2160 * 100vh;
+    }
+
+    &_icon {
+      font-size: 2rem;
+    }
+
+    &_text {
+      margin-left: 40 / 3200 * 100vw;
+      position: relative;
+      top: -0.6rem;
+    }
+  }
+}

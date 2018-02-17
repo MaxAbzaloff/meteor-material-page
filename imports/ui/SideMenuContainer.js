@@ -12,17 +12,41 @@ import TimeTracking from './components/TimeTracking'
 import './SideMenuContainer.scss'
 
 class SideMenuContainer extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      customAvatarStyles: {
+        width: 138 / 2160 * 100 + 'vh',
+        height: 138 / 2160 * 100 + 'vh'
+      },
+      dashboard: [
+        {
+          id: 1,
+          className: 'blue',
+          title: 'Buildteam'
+        },
+        {
+          id: 2,
+          className: 'yellow',
+          title: 'Kickstagram'
+        }
+      ]
+    }
+  }
   render () {
     return (
       <div className='side-menu'>
         <div className='side-header side-menu__side-header header'>
-          <CustomAvatar className='side-header__avatar' />
-          <Notifications className='side-header__button' />
-          <Settings className='side-header__button' />
-          <Authorization className='side-header__button' />
+          <CustomAvatar className='side-header__avatar' customStyles={this.state.customAvatarStyles} />
+          <div>
+            <Notifications className='side-header__button' />
+            <Settings className='side-header__button' />
+            <Authorization className='side-header__button' />
+          </div>
         </div>
         <div className='side-content'>
-          <PojectsDashboard className='side-content__block' />
+          <PojectsDashboard className='side-content__block' list={this.state.dashboard} />
           <MyTasks className='side-content__block' />
           <TimeTracking className='side-content__block' />
         </div>
