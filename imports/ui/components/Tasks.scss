@@ -1,0 +1,43 @@
+@import '../constants';
+
+$tasks-gray-color: #929495;
+$tasks-blue-color: #5da6ff;
+$tasks-green-color: #55d1a4;
+
+.tasks {
+  color: $tasks-gray-color;
+  padding-top: 50 / 2160 * 100vh;
+  
+  &__header {
+    display: inline-block;
+    color: black;
+    margin: 0px;
+  }
+
+  &__icon-button {
+    top: 0.3rem;
+  }
+
+  &__filters {
+    float: right;
+    position: relative;
+    top: 0.6rem;
+    color: black;
+  }
+
+  &__filter-icon {
+    position: relative;
+    top: 0.5rem;
+    color: $tasks-gray-color;
+  }
+
+  &__details {
+    display: block;
+    font-size: 0.9rem;
+  }
+
+  &__stack {
+    height: 100%;
+    margin-top: 50 / 2160 * 100vh;
+  }
+}

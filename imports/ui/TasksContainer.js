@@ -11,7 +11,8 @@ class TasksContainer extends React.Component {
 
     this.state = {
       tabStyle: {
-        backgroundColor: 'gray'
+        backgroundColor: '#edeff2',
+        color: '#bdbfc1'
       },
       tasks: [{
         id: 1,
@@ -23,7 +24,8 @@ class TasksContainer extends React.Component {
         employee: 'Elnora Douglas',
         dueDate: '13 APR 2017',
         estimated: '23h',
-        logged: '4h'
+        logged: '4h',
+        completed: 40
       }, {
         id: 2,
         tag: 'BUL-1',
@@ -34,7 +36,8 @@ class TasksContainer extends React.Component {
         employee: 'Elnora Douglas',
         dueDate: '13 APR 2017',
         estimated: '23h',
-        logged: '2h'
+        logged: '2h',
+        completed: 15
       }
       ]
     }

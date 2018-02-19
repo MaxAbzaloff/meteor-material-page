@@ -25,14 +25,14 @@ class ContentContainer extends Component {
         <div className='content-header content__content-header header'>
           <h2 className='content-header__header'>{this.props.headerText}</h2>
           <i className='material-icons content-header__icon'>search</i>
-          <Tabs className='content-header__tabs' tabItemContainerStyle={this.state.tabStyle}>
-            <Tab label='overview' className='content-header__tab' buttonStyle={this.state.btnStyle}>
+          <Tabs className='content-header__tabs' tabItemContainerStyle={this.state.tabStyle} contentContainerClassName='tasks-container__tab'>
+            <Tab label='overview' buttonStyle={this.state.btnStyle}>
               overview
             </Tab>
-            <Tab label='tasks' className='content-header__tab'>
+            <Tab label='tasks'>
               <TasksContainer />
             </Tab>
-            <Tab label='progress' className='content-header__tab'>
+            <Tab label='progress'>
               progress
             </Tab>
           </Tabs>

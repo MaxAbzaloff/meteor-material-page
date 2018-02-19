@@ -1,10 +1,16 @@
-.tasks-container {
+@import './constants';
 
+$padding-left: 300 / 3200 * 100vw;
+$padding-top: 100 / 3200 * 100vh;
+$padding-right: 340 / 3200 * 100vw;
+
+.tasks-container {
   &__tabs {
     
   }
 
   &__tab {
-    color: blue;
+    padding: $padding-top $padding-right 0 $padding-right;
+    background-color: $tab-content-gray-color;
   }
 }
