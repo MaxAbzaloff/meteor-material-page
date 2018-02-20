@@ -1,9 +1,13 @@
 import React from 'react'
 
-const AddChat = () => (
-  <div>
-    <i className='material-icons'>control_point</i>
-    <span>More...</span>
+import './AddChat.scss'
+
+const AddChat = ({className = ''}) => (
+  <div className={'add-chat ' + className}>
+    <div className='add-chat__wrapper'>
+      <i className='material-icons add-chat__icon'>add</i>
+    </div>
+    <span className='add-chat__label'>More...</span>
   </div>
 )
 

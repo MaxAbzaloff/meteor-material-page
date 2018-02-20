@@ -9,6 +9,23 @@
   box-sizing: border-box;
   box-shadow: -1px 20px 20px #e1e3e6;
   background-color: #fff;
+  color: $chat-gray-color;
+
+  &__icon {
+    height: 140 / 2160 * 100vh;
+    text-align: center;
+    color: $icon-gray-color;
+    line-height: 140 / 2160 * 100vh;
+    border-bottom: 2px solid $tab-content-gray-color;
+
+    i {
+      vertical-align: middle;
+    }
+  }
+
+  &__plus {
+
+  }
 
   &__footer {
     right: 2px;
