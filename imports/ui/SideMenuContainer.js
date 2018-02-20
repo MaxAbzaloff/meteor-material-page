@@ -46,7 +46,7 @@ class SideMenuContainer extends Component {
           </div>
         </div>
         <div className='side-content'>
-          <PojectsDashboard className='side-content__block' list={this.state.dashboard} />
+          <PojectsDashboard className='side-content__block active' list={this.state.dashboard} />
           <MyTasks className='side-content__block' />
           <TimeTracking className='side-content__block' />
         </div>
