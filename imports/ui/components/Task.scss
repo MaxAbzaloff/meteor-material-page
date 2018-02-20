@@ -2,6 +2,7 @@ $priority-medium-color: #5da6ff;
 $priority-low-color: #55d1a4;
 
 $margin-right: 30 / 3200 * 100vw;
+$border-radius-detail: 5px;
 
 $task-padding-top: 50 / 2160 * 100vh;
 $task-padding-right: 70 / 3200 * 100vw;
@@ -42,16 +43,19 @@ $task-padding-bottom: 50 / 2160 * 100vh;
   &__title {
     display: inline-block;
     margin: 0px;
+    margin-top: 10 / 2160 * 100vh;
+    margin-bottom: 10 / 2160 * 100vh;
     color: black;
   }
 
   &__flag {
     display: inline-block;
     background-color: gray;
-    border-radius: 5px;
+    border-radius: $border-radius-detail;
     padding: 15 / 2160 * 100vh;
     margin-right: $margin-right;
     color: white;
+    box-sizing: border-box;
 
     &_priority {
       &_medium {
@@ -64,8 +68,14 @@ $task-padding-bottom: 50 / 2160 * 100vh;
   }
 
   &__avatar {
+    box-sizing: border-box;
     display: inline-block;
     margin-right: $margin-right;
+    width: 85 / 2160 * 100vh;
+    height: 85 / 2160 * 100vh;
+    vertical-align: bottom;
+    border-radius: $border-radius-detail;
+    background-color: gray;
   }
 
   &__details {

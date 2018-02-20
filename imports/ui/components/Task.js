@@ -22,14 +22,15 @@ const Task = ({task}) => (
 
       <div className='task__details'>
         <div className={'task__flag task__flag_priority_' + task.priority.toLowerCase()}>
-          <span className='task__point'></span>
+          <span className='task__point' />
           {task.priority}
         </div>
         <div className='task__flag'>
-          <span className='task__point'></span>
+          <span className='task__point' />
           {task.status}
         </div>
-        <CustomAvatar src={task.avatar} className='task__avatar' />
+        {/* <CustomAvatar src={task.avatar} className='task__avatar' /> */}
+        <span className='task__avatar' />
         <span className='task__detail'>{task.employee}</span>
         <span className='task__detail'>{'Due date: ' + task.dueDate}</span>
         <span className='task__detail'>{'Estimated: ' + task.estimated}</span>
