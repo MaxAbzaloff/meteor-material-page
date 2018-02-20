@@ -5,6 +5,11 @@ import LinearProgress from 'material-ui/LinearProgress'
 import RaisedButton from 'material-ui/RaisedButton'
 import './Task.scss'
 
+const buttonStyles = {
+  backroundColor: '#5da6ff',
+  color: 'white'
+}
+
 const Task = ({task}) => (
   <div className={'task ' + 'task__priority_' + task.priority.toLowerCase()}>
     <div className='task__more'>
@@ -37,7 +42,7 @@ const Task = ({task}) => (
         <LinearProgress mode='determinate' value={task.completed} />
       </div>
       <div className='log-data__block log-data__block_get-higer_0-7-rem'>
-        <RaisedButton label='Log Time' />
+        <RaisedButton label='Log Time' labelPosition='before' icon={<i className='material-icons'>timer</i>} labelColor='white' buttonStyle={buttonStyles} backgroundColor='#5da6ff' />
       </div>
     </div>
   </div>
