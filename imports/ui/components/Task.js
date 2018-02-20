@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CustomAvatar from '../components/CustomAvatar'
+// import CustomAvatar from '../components/CustomAvatar'
 import LinearProgress from 'material-ui/LinearProgress'
 import RaisedButton from 'material-ui/RaisedButton'
 import './Task.scss'

@@ -78,6 +78,12 @@ $task-padding-bottom: 50 / 2160 * 100vh;
     background-color: gray;
   }
 
+  &__icon-button span.material-icons {
+    color: white;
+    background-color: $priority-medium-color;
+    border-radius: 50%;
+  }
+
   &__details {
     display: inline-block;
   }
