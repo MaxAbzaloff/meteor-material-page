@@ -2,10 +2,10 @@ import React from 'react'
 
 import CustomAvatar from './CustomAvatar'
 
-const LastChats = () => (
+const LastChats = ({className = '', chats = []}) => (
   <div>
     {
-      [1, 2, 3, 4, 5].map(key => <CustomAvatar key={key} />)
+      chats.map(chat => <CustomAvatar key={chat.id} className={className} label={chat.name} />)
     }
   </div>
 )
