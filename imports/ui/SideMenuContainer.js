@@ -38,9 +38,9 @@ class SideMenuContainer extends Component {
     return (
       <div className='side-menu'>
         <div className='side-header side-menu__side-header header'>
-          <CustomAvatar className='side-header__avatar' customStyles={this.state.customAvatarStyles} />
-          <div>
-            <Notifications className='side-header__button' />
+          <CustomAvatar className='side-header__avatar' customStyles={this.state.customAvatarStyles} onlineState='online' />
+          <div className='side-header__buttons-block'>
+            <Notifications className='side-header__button' unreeded={1} />
             <Settings className='side-header__button' />
             <Authorization className='side-header__button' />
           </div>

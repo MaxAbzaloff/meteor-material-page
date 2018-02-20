@@ -24,17 +24,43 @@
 .side-header {
   width: 100%;
   position: relative;
-  padding-top: $side-menu-header-padding-top;
-  padding-left: $side-menu-header-padding-left;
+  // padding-top: $side-menu-header-padding-top;
+  // padding-left: $side-menu-header-padding-left;
   box-shadow: 1px -20px 20px #3b4aaf;
 
   &__avatar {
     display: inline-block;
+    margin-top: 60 / 2160 * 100vh;
+    margin-left: 40 / 3200 * 100vw;
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__state {
+      display: inline-block;
+      width: 36 / 2160 * 100vh;
+      height: 36 / 2160 * 100vh;
+      background-color: #37d59c;
+      border-radius: 50%;
+      border: 6 / 2160 * 100vh solid $main-blue-color;
+      position: absolute;
+      bottom: 0.4rem;
+      right: 0rem;
+    }
+  }
+
+  &__buttons-block {
+    float: right;
+    margin-top: 100 / 2160 * 100vh;
+    margin-right: 40 / 3200 * 100vw;
   }
 
   &__button {
     display: inline-block;
     color: white;
+    margin-left: 50 / 3200 * 100vw;
+    position: relative;
   }
 }
 
