@@ -38,6 +38,7 @@ $task-padding-bottom: 50 / 2160 * 100vh;
     display: inline-block;
     height: 100%;
     margin-left: 130 / 3200 * 100vw;
+    margin-right: 28%;
   }
 
   &__title {
@@ -86,6 +87,7 @@ $task-padding-bottom: 50 / 2160 * 100vh;
 
   &__details {
     display: inline-block;
+    white-space: normal;
   }
 
   &__point {
@@ -101,6 +103,7 @@ $task-padding-bottom: 50 / 2160 * 100vh;
   &__detail {
     display: inline-block;
     margin-right: $margin-right;
+    padding-top: 5px;
 
     &:last-child {
       margin: 0px;
