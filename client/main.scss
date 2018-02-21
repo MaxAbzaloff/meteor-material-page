@@ -3,6 +3,10 @@
 @import '../imports/ui/constants';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
+#react-render-target {
+  white-space: nowrap;
+}
+
 .gray {
   color: #dadfea;
 }
