@@ -1,7 +1,9 @@
 import React from 'react'
 
-import { Tabs, Tab } from 'material-ui/Tabs'
+// import { Tabs, Tab } from 'material-ui/Tabs'
 import Tasks from './components/Tasks'
+import Tabs from './components/Tabs'
+import Tab from './components/Tab'
 
 import './TasksContainer.scss'
 
@@ -14,6 +16,7 @@ class TasksContainer extends React.Component {
         backgroundColor: '#edeff2',
         color: '#bdbfc1'
       },
+      activeTab: 0,
       tasks: [{
         id: 1,
         tag: 'ROYA1',
@@ -46,22 +49,22 @@ class TasksContainer extends React.Component {
   render () {
     return (
       <div>
-        <Tabs className='tasks-container__tabs' tabItemContainerStyle={this.state.tabStyle}>
+        <Tabs className='tasks-container__tabs' tabs={this.state.tasks}>
           <Tab label='new(2)' className='tasks-container__tab'>
             <Tasks tasks={this.state.tasks} />
           </Tab>
-          <Tab label='in progress(6)' className='tasks-container__tab'>
+          <div label='in progress(6)' className='tasks-container__tab'>
             in progress
-          </Tab>
-          <Tab label='ready for qa(1)' className='tasks-container__tab'>
+          </div>
+          <div label='ready for qa(1)' className='tasks-container__tab'>
             ready for qa
-          </Tab>
-          <Tab label='done(9)' className='tasks-container__tab'>
+          </div>
+          <div label='done(9)' className='tasks-container__tab'>
             done
-          </Tab>
-          <Tab label='close(6)' className='tasks-container__tab'>
+          </div>
+          <div label='close(6)' className='tasks-container__tab'>
             close
-          </Tab>
+          </div>
         </Tabs>
       </div>
     )
