@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 
-import { Tabs, Tab } from 'material-ui/Tabs'
+// import { Tabs, Tab } from 'material-ui/Tabs'
 import TasksContainer from './TasksContainer'
+import Tabs from './components/Tabs'
+import Tab from './components/Tab'
 
 import './ContentContainer.scss'
 

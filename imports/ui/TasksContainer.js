@@ -49,22 +49,22 @@ class TasksContainer extends React.Component {
   render () {
     return (
       <div>
-        <Tabs className='tasks-container__tabs' tabs={this.state.tasks}>
+        <Tabs className='tasks-container__tabs'>
           <Tab label='new(2)' className='tasks-container__tab'>
             <Tasks tasks={this.state.tasks} />
           </Tab>
-          <div label='in progress(6)' className='tasks-container__tab'>
+          <Tab label='in progress(6)' className='tasks-container__tab'>
             in progress
-          </div>
-          <div label='ready for qa(1)' className='tasks-container__tab'>
+          </Tab>
+          <Tab label='ready for qa(1)' className='tasks-container__tab'>
             ready for qa
-          </div>
-          <div label='done(9)' className='tasks-container__tab'>
+          </Tab>
+          <Tab label='done(9)' className='tasks-container__tab'>
             done
-          </div>
-          <div label='close(6)' className='tasks-container__tab'>
+          </Tab>
+          <Tab label='close(6)' className='tasks-container__tab'>
             close
-          </div>
+          </Tab>
         </Tabs>
       </div>
     )

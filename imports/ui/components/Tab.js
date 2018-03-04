@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Tab = props => (
-  <div onClick={props.onClick}>
+  <div>
     {
       props.children
     }

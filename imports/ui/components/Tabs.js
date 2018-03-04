@@ -10,9 +10,7 @@ class Tabs extends React.Component {
   }
 
   onClick (event) {
-    console.log(event.target.firstChild)
-    console.log([...event.target.parentNode.children].indexOf(event.target))
-    console.log(this)
+    event.preventDefault()
     this.setState({
       active: [...event.target.parentNode.children].indexOf(event.target)
     })
@@ -24,8 +22,6 @@ class Tabs extends React.Component {
       titles.push(child.props.label)
       return React.cloneElement(child, {onClick: this.onClick})
     })
-
-    console.log(titles)
 
     return (
       <div>
