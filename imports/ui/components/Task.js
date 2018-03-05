@@ -2,13 +2,14 @@ import React from 'react'
 
 // import CustomAvatar from '../components/CustomAvatar'
 import LinearProgress from 'material-ui/LinearProgress'
-import RaisedButton from 'material-ui/RaisedButton'
+// import RaisedButton from 'material-ui/RaisedButton'
+import RaisedButton from '../components/RaisedButton'
 import './Task.scss'
 
-const buttonStyles = {
-  backroundColor: '#5da6ff',
-  color: 'white'
-}
+// const buttonStyles = {
+//   backroundColor: '#5da6ff',
+//   color: 'white'
+// }
 
 const Task = ({task}) => (
   <React.Fragment>
@@ -44,7 +45,7 @@ const Task = ({task}) => (
           <LinearProgress mode='determinate' value={task.completed} />
         </div>
         <div className='log-data__block log-data__block_get-higer_0-7-rem'>
-          <RaisedButton label='Log Time' labelPosition='before' icon={<i className='material-icons'>timer</i>} labelColor='white' buttonStyle={buttonStyles} backgroundColor='#5da6ff' />
+          <RaisedButton label='Log Time' icon={<i className='material-icons'>timer</i>} className='raised-button' />
         </div>
       </div>
     </div>

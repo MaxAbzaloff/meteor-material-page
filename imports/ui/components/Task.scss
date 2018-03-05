@@ -16,7 +16,6 @@ $task-padding-bottom: 50 / 2160 * 100vh;
   padding: $task-padding-top $task-padding-right $task-padding-bottom 0;
   box-sizing: border-box;
   border-left: 8 / 3200 * 100vw solid gray;
-  // margin-bottom: 5px;
   background-color: white;
 
   &__priority_medium {
@@ -161,4 +160,9 @@ $task-padding-bottom: 50 / 2160 * 100vh;
   &__bar {
     width: 150 / 3200 * 100vw;
   }
+}
+
+.raised-button {
+  background-color: #5da6ff;
+  color: #fff;
 }
