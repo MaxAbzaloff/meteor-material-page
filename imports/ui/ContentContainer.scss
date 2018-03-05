@@ -15,6 +15,14 @@
 .tasks__tab {
   padding-left: 50 / 3200 * 100vw;
   padding-right: 50 / 3200 * 100vw;
+
+  &_active {
+    color: white;
+  }
+
+  &_default {
+    color: #9ea6db;
+  }
 }
 
 .content-header {
@@ -36,7 +44,6 @@
   }
 
   &__tabs {
-    // height: 4.5vh;
     top: 7vh;
     position: absolute;
     width: 100%;
