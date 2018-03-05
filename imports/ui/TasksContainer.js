@@ -49,7 +49,12 @@ class TasksContainer extends React.Component {
   render () {
     return (
       <div>
-        <Tabs className='tasks-container__tabs'>
+        <Tabs className='tasks-container__tabs'
+              contentContainerClassName='tab-container'
+              headerContainerClassName='tab-header'
+              defaultClassName='tab tab_default'
+              activeClassName='tab tab_active'
+              stresserClassName='tasks-container__stresser'>
           <Tab label='new(2)' className='tasks-container__tab'>
             <Tasks tasks={this.state.tasks} />
           </Tab>

@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 
-.stresser {
+.stresser-default {
   transition-property: left, width;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   height: 4px;
-  background-color: white;
   position: relative;
   left: 0px;
 }
@@ -17,4 +16,5 @@
   display: inline-block;
   height: 100%;
   padding: 30 / 2160 * 100vh 20 / 3200 * 100vw;
+  cursor: pointer;
 }

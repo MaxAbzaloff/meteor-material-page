@@ -44,7 +44,7 @@ class Tabs extends React.Component {
             titles.map((title, idx) => <div key={idx} className={'tab ' + (idx === this.state.active ? this.props.activeClassName : this.props.defaultClassName) } ref={idx} onClick={this.onClick.bind(this)}>{title.toUpperCase()}</div>)
           }
         </div>
-        <div className='stresser' ref={target => this.stresser = target} />
+        <div className={'stresser-default ' + this.props.stresserClassName} ref={target => this.stresser = target} />
         <div className={this.props.contentContainerClassName}>
           {
             children.filter((child, idx) => idx === this.state.active)

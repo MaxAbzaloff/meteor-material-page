@@ -18,4 +18,21 @@ $padding-right: 340 / 3200 * 100vw;
     color: white;
     height: 4.5vh;
   }
+
+  &__stresser {
+    background-color: #5da6ff;
+  }
+}
+
+.tab {
+  padding-left: 20 / 3200 * 100vw;
+  padding-right: 20 / 3200 * 100vw;
+
+  &_default {
+    color: #bdbfc1;
+  }
+
+  &_active {
+    color: #5da6ff;
+  }
 }

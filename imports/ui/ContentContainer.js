@@ -31,7 +31,8 @@ class ContentContainer extends Component {
                 contentContainerClassName='tasks-container__tab'
                 headerContainerClassName='tasks-container__header'
                 defaultClassName='tasks__tab tasks__tab_default'
-                activeClassName='tasks__tab tasks__tab_active'>
+                activeClassName='tasks__tab tasks__tab_active'
+                stresserClassName='stresser'>
             <Tab label='overview' buttonStyle={this.state.btnStyle}>
               overview
             </Tab>
