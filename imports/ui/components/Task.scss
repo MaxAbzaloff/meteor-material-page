@@ -1,3 +1,5 @@
+@import '../constants';
+
 $priority-medium-color: #5da6ff;
 $priority-low-color: #55d1a4;
 
@@ -14,7 +16,7 @@ $task-padding-bottom: 50 / 2160 * 100vh;
   padding: $task-padding-top $task-padding-right $task-padding-bottom 0;
   box-sizing: border-box;
   border-left: 8 / 3200 * 100vw solid gray;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   background-color: white;
 
   &__priority_medium {
@@ -115,6 +117,19 @@ $task-padding-bottom: 50 / 2160 * 100vh;
     right: $task-padding-right;
     bottom: $task-padding-bottom;
   }
+
+  // &:after {
+  //   content: ' ';
+  //   display: block;
+  //   width: 100%;
+  //   background-color: $tab-content-gray-color;
+  // }
+}
+
+.gray-container {
+  width: 100%;
+  background-color: $tab-content-gray-color;
+  height: 5 / 2160 * 100vh;
 }
 
 .log-data {

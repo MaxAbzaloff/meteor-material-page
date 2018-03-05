@@ -28,6 +28,10 @@ $padding-right: 340 / 3200 * 100vw;
   padding-left: 20 / 3200 * 100vw;
   padding-right: 20 / 3200 * 100vw;
 
+  &-header {
+    height: 4.5vh;
+  }
+
   &_default {
     color: #bdbfc1;
   }

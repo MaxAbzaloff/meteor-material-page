@@ -6,7 +6,16 @@ $tasks-green-color: #55d1a4;
 
 .tasks {
   color: $tasks-gray-color;
-  padding-top: 50 / 2160 * 100vh;
+  // padding-top: 50 / 2160 * 100vh;
+  background-color: white;
+  // min-height: 79.59284vh;
+  min-height: calc(100vh - 11.80556vh - 3.125vh - 4.5vh - 11px);
+
+  &__control-panel {
+    padding-top: 2.3vh;
+    padding-bottom: 2.3vh;
+    background-color: #edeff2;
+  }
   
   &__header {
     display: inline-block;
@@ -41,7 +50,5 @@ $tasks-green-color: #55d1a4;
   }
 
   &__stack {
-    height: 100%;
-    margin-top: 50 / 2160 * 100vh;
   }
 }
