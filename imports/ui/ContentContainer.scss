@@ -5,10 +5,16 @@
   height: 100vh;
   display: inline-block;
   vertical-align: top;
+  position: relative;
 
   &__workspace {
     width: 100%;
   }
+}
+
+.tasks__tab {
+  padding-left: 50 / 3200 * 100vw;
+  padding-right: 50 / 3200 * 100vw;
 }
 
 .content-header {
@@ -19,8 +25,8 @@
 
   &__header {
     color: #fff;
-    margin: 0px 0px 0px 50px;
-    display: inline-block;
+    margin: 0px 0px 0px 50 / 3200 * 100vw;
+    display: inline-block;;
   }
 
   &__icon {
@@ -30,7 +36,10 @@
   }
 
   &__tabs {
-    height: 4.5vh;
+    // height: 4.5vh;
+    top: 7vh;
+    position: absolute;
+    width: 100%;
   }
 
   &__tab {

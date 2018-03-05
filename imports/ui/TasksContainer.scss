@@ -13,4 +13,9 @@ $padding-right: 340 / 3200 * 100vw;
     padding: $padding-top $padding-right 0 $padding-right;
     background-color: $tab-content-gray-color;
   }
+
+  &__header {
+    color: white;
+    height: 4.5vh;
+  }
 }

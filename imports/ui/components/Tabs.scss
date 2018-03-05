@@ -1,0 +1,20 @@
+@import '../constants';
+
+* {
+  box-sizing: border-box;
+}
+
+.stresser {
+  transition-property: left, width;
+  transition-duration: 1s;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  left: 0px;
+}
+
+.tab {
+  display: inline-block;
+  height: 100%;
+  padding: 30 / 2160 * 100vh 20 / 3200 * 100vw;
+}

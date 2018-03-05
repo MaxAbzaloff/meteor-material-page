@@ -31,6 +31,7 @@
   // padding-top: $side-menu-header-padding-top;
   // padding-left: $side-menu-header-padding-left;
   box-shadow: 1px -20px 20px #3b4aaf;
+  z-index: 1;
 
   &__avatar {
     display: inline-block;

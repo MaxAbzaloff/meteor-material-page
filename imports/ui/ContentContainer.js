@@ -27,7 +27,10 @@ class ContentContainer extends Component {
         <div className='content-header content__content-header header'>
           <h2 className='content-header__header'>{this.props.headerText}</h2>
           <i className='material-icons content-header__icon'>search</i>
-          <Tabs className='content-header__tabs' tabItemContainerStyle={this.state.tabStyle} contentContainerClassName='tasks-container__tab'>
+          <Tabs className='content-header__tabs'
+                contentContainerClassName='tasks-container__tab'
+                headerContainerClassName='tasks-container__header'
+                tabContainerClassName='tasks__tab'>
             <Tab label='overview' buttonStyle={this.state.btnStyle}>
               overview
             </Tab>
