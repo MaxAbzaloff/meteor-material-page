@@ -8,19 +8,6 @@ import Tab from './components/Tab'
 import './ContentContainer.scss'
 
 class ContentContainer extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      tabStyle: {
-        backgroundColor: '#3e4eb8',
-        height: '4.5vh'
-      },
-      btnStyle: {
-        width: '230px'
-      }
-    }
-  }
   render () {
     return (
       <div className='content'>
@@ -33,7 +20,7 @@ class ContentContainer extends Component {
                 defaultClassName='tasks__tab tasks__tab_default'
                 activeClassName='tasks__tab tasks__tab_active'
                 stresserClassName='stresser'>
-            <Tab label='overview' buttonStyle={this.state.btnStyle}>
+            <Tab label='overview'>
               overview
             </Tab>
             <Tab label='tasks'>

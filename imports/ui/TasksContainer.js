@@ -12,10 +12,6 @@ class TasksContainer extends React.Component {
     super(props)
 
     this.state = {
-      tabStyle: {
-        backgroundColor: '#edeff2',
-        color: '#bdbfc1'
-      },
       activeTab: 0,
       tasks: [{
         id: 1,
