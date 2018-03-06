@@ -1,8 +1,9 @@
 import React from 'react'
 
-import Avatar from 'material-ui/Avatar'
+// import Avatar from 'material-ui/Avatar'
+import './CustomAvatar.scss'
 
-const CustomAvatar = ({src = '', className = '', onlineState = '', check = false, size = 140, customStyles = {}, label = ''}) => {
+const CustomAvatar = ({src = '', className = '', onlineState = '', check = false, size = 140, label = ''}) => {
   const lbl = () => {
     if (label !== '') {
       return <span className={className + '__label'}>{label}</span>
@@ -30,9 +31,9 @@ const CustomAvatar = ({src = '', className = '', onlineState = '', check = false
   }
 
   return (
-    <div className={className}>
-      <div className={className + '__wrapper'}>
-        <Avatar src={src} style={customStyles} className={className + '__avatar'} />
+    <div className={'avatar ' + className}>
+      <div className={'avatar__wrapper'}>
+        <div className={'avatar__img'} style={{backgroundImage: `url(${src})`}} />
         {
           chck()
         }

@@ -16,10 +16,6 @@ class SideMenuContainer extends Component {
     super(props)
 
     this.state = {
-      customAvatarStyles: {
-        width: 138 / 2160 * 100 + 'vh',
-        height: 138 / 2160 * 100 + 'vh'
-      },
       dashboard: [
         {
           id: 1,
@@ -38,7 +34,7 @@ class SideMenuContainer extends Component {
     return (
       <div className='side-menu'>
         <div className='side-header side-menu__side-header header'>
-          <CustomAvatar className='side-header__avatar' customStyles={this.state.customAvatarStyles} onlineState='online' />
+          <CustomAvatar className='side-header__avatar' onlineState='online' />
           <div className='side-header__buttons-block'>
             <Notifications className='side-header__button' unreeded={1} />
             <Settings className='side-header__button' />

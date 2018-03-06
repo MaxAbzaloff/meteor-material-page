@@ -37,10 +37,8 @@
     display: inline-block;
     margin-top: 60 / 2160 * 100vh;
     margin-left: 40 / 3200 * 100vw;
-
-    &__wrapper {
-      position: relative;
-    }
+    width: 138 / 2160 * 100vh;
+    height: 138 / 2160 * 100vh;
 
     &__state {
       display: inline-block;
