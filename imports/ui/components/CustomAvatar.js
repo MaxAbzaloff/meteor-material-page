@@ -4,13 +4,13 @@ import React from 'react'
 import './CustomAvatar.scss'
 
 const CustomAvatar = ({src = '', className = '', onlineState = '', check = false, size = 140, label = ''}) => {
-  const lbl = () => {
-    if (label !== '') {
-      return <span className={className + '__label'}>{label}</span>
-    } else {
-      return ''
-    }
-  }
+  // const lbl = () => {
+  //   if (label !== '') {
+  //     return <span className={className + '__label'}>{label}</span>
+  //   } else {
+  //     return ''
+  //   }
+  // }
 
   const onln = () => {
     if (onlineState === 'online') {
@@ -41,9 +41,9 @@ const CustomAvatar = ({src = '', className = '', onlineState = '', check = false
           onln()
         }
       </div>
-      {
+      {/* {
         lbl()
-      }
+      } */}
     </div>
   )
 }

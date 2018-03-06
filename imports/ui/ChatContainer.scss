@@ -25,17 +25,18 @@
 
   &__recent-chat {
     text-align: center;
-
-    &__wrapper {
-      border: 8 / 2160 * 100vh solid #f3f5f8;
-      height: 110 / 2160 * 100vh;
-      width: 110 / 2160 * 100vh;
-      border-radius: 50%;
-      display: inline-block;
-      line-height: 110 / 2160 * 100vh;
+    height: 110 / 2160 * 100vh;
+    width: 110 / 2160 * 100vh;
+    line-height: 110 / 2160 * 100vh;
       margin-top: 50 / 2160 * 100vh;
+
+    // &__wrapper {
+      border: 8 / 2160 * 100vh solid #f3f5f8;
+      border-radius: 50%;
+      // display: inline-block;
+      
       position: relative;
-    }
+    // }
 
     &__avatar {
       height: 110 / 2160 * 100vh;

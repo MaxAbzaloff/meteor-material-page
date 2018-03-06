@@ -40,11 +40,7 @@ class ChatContainer extends Component {
           src: '',
           check: false
         }
-      ],
-      customAvatarStyles: {
-        height: '100%',
-        width: '100%'
-      }
+      ]
     }
   }
   render () {
@@ -53,7 +49,7 @@ class ChatContainer extends Component {
         <div className='chat__icon'>
           <i className='material-icons'>chat</i>
         </div>
-        <LastChats className='chat__recent-chat' chats={this.state.chats} customAvatarStyles={this.state.customAvatarStyles} />
+        <LastChats className='chat__recent-chat' chats={this.state.chats} />
         <AddChat className='chat__plus' />
         <div className='footer chat__footer' />
       </div>
