@@ -4,7 +4,8 @@ import './RaisedButton.scss'
 
 const RaisedButton = props => (
   <button type='button' className={'raised-button ' + props.className}>
-    {props.label} {props.icon}
+    <span>{props.label}</span>
+    {props.icon}
   </button>
 )
 

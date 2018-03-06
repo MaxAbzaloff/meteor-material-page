@@ -3,6 +3,8 @@
 
   display: inline-block;
   padding: 0;
+  padding-left: 30 / 3200 * 100vw;
+  padding-right: 30 / 3200 * 100vw;
 
   border-width: 0;
   // outline: none;
@@ -13,6 +15,26 @@
   // color: #ecf0f1;
   
   transition: background-color .3s;
+  cursor: pointer;
+
+  height: 80 / 2160 * 100vh;
+  // min-width: 250 / 3200 * 100vw;
+
+
+  & > span {
+    display: inline-block;
+    // height: 80 / 2160 * 100vh;
+    // line-height: 80 / 2160 * 100vh;
+    vertical-align: super;    
+    // margin: 0 30 / 3200 * 100vw 0 30 / 3200 * 100vw;
+  }
+
+  & > i {
+    margin-left: 20 / 3200 * 100vw;
+    // margin: 0 20 / 3200 * 100vw 0 20 / 3200 * 100vw;
+    // height: 80 / 2160 * 100vh;
+    // line-height: 80 / 2160 * 100vh;
+  }
 }
 
 // .btn:hover, .btn:focus {
