@@ -1,0 +1,81 @@
+.CreateAndUpdateTask {
+  position: fixed;
+  top: 16vh;
+  right: 10.625vw;
+  width: 82.8125vw - 10.625*2vw;
+  min-height: calc(100vh - 11.80556vh - 3.125vh - 4.5vh - 11px);
+  z-index: 2;
+  background-color: #fff;
+  padding: 10vh 10vw;
+  font-size: 2vh;
+
+  // &::before {
+  //   content: '';
+  //   display: block;
+  //   position: fixed;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   z-index: 1;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgba(128, 128, 128, 0.2);
+  // }
+
+  &-Label {    
+    display: block;
+    margin-bottom: 5vh;
+
+    & > input {
+      line-height: 2vh;
+      font-size: 2vh;
+      border: none;
+      border-bottom: 2px solid rgb(204, 204, 204);
+      outline: none;
+      margin-left: 1vw;
+      color: #929495;
+
+      &:focus {
+        border-color: rgb(0, 183, 255);
+      }
+    }
+  }
+
+  &-Checkboxes {
+    display: block;
+    margin-bottom: 5vh;
+
+    & > input {
+      // display: none;
+      visibility: hidden;
+
+      &:checked+label {
+        border-bottom: 2px solid rgb(0, 183, 255);
+      }
+    }
+
+    & > label {
+      margin-left: 1vw;
+      cursor: pointer;
+    }
+  }
+}
+
+.hide {
+  // visibility: hidden;
+  // z-index: -1;
+  display: none;
+}
+
+.RaisedButton {
+  background-color: #5da6ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 2vh;
+
+  &:last-child {
+    margin-left: 1vw;
+  }
+}

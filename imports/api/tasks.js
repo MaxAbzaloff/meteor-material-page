@@ -28,5 +28,8 @@ Meteor.methods({
   },
   'tasks.removeAll' () {
     Tasks.remove({})
+  },
+  'tasks.update' (taskId, data) {
+    Tasks.update(taskId, data)
   }
 })

@@ -5,6 +5,8 @@ import { withTracker } from 'meteor/react-meteor-data'
 
 import { Tasks as apiTasks } from '../api/tasks'
 
+import TaskCreateUpdateContainer from './TaskCreateUpdateContainer'
+
 import Tasks from './components/Tasks'
 import Tabs from './components/Tabs'
 import Tab from './components/Tab'
@@ -66,23 +68,23 @@ class TasksContainer extends React.Component {
     }
   }
 
-  addNewTask (event) {
-    event.preventDefault()
-    console.log('add new task')
-    Meteor.call('tasks.insert', {
-      id: 3,
-      tag: 'BUL-1',
-      title: 'New user list for inline shop quo-shopping.com',
-      priority: 'Low',
-      status: 'Open',
-      avatar: 'src',
-      employee: 'Elnora Douglas',
-      dueDate: '13 APR 2017',
-      estimated: '23h',
-      logged: '2h',
-      completed: 15
-    })
-  }
+  // addNewTask (event) {
+  //   event.preventDefault()
+  //   this.createUpdateTaskRef.classList.toggle('hide')
+  //   // Meteor.call('tasks.insert', {
+  //   //   id: 3,
+  //   //   tag: 'BUL-1',
+  //   //   title: 'New user list for inline shop quo-shopping.com',
+  //   //   priority: 'Low',
+  //   //   status: 'Open',
+  //   //   avatar: 'src',
+  //   //   employee: 'Elnora Douglas',
+  //   //   dueDate: '13 APR 2017',
+  //   //   estimated: '23h',
+  //   //   logged: '2h',
+  //   //   completed: 15
+  //   // })
+  // }
 
   render () {
     return (
@@ -94,7 +96,7 @@ class TasksContainer extends React.Component {
           activeClassName='tab tab_active'
           stresserClassName='tasks-container__stresser'>
           <Tab label='new(2)' className='tasks-container__tab'>
-            <Tasks tasks={this.props.tasks} sort={this.state.sort} onFilterClick={this.onFilterClick.bind(this)} addNewTask={this.addNewTask.bind(this)} />
+            <Tasks tasks={this.props.tasks} sort={this.state.sort} onFilterClick={this.onFilterClick.bind(this)} />
           </Tab>
           <Tab label='in progress(6)' className='tasks-container__tab'>
             in progress

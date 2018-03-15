@@ -1,14 +1,23 @@
 import React from 'react'
 
+import TaskCreateUpdateContainer from '../TaskCreateUpdateContainer'
+
 import LinearProgress from 'material-ui/LinearProgress'
 import RaisedButton from '../components/RaisedButton'
 import './Task.scss'
 
-const Task = ({task}) => (
+// let  targetRef
+
+// const updateTask = (event, task) => {
+//   targetRef.classList.toggle('hide')
+// }
+
+const Task = ({task, updateTask}) => (
   <React.Fragment>
+    {/* <TaskCreateUpdateContainer createUpdateTaskRef={target => targetRef = target} /> */}
     <div className={'task ' + 'task__priority_' + task.priority.toLowerCase()}>
       <div className='task__more'>
-        <i className='material-icons'>more_vert</i>
+        <i className='material-icons' onClick={event => updateTask(event, task)} >more_vert</i>
       </div>
 
       <div className='task__content'>

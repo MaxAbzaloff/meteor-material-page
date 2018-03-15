@@ -33,6 +33,10 @@ $task-padding-bottom: 50 / 2160 * 100vh;
     transform: translateY(-50%);
     width: 130 / 3200 * 100vw;
     text-align: center;
+
+    & > i {
+      cursor: pointer;
+    }
   }
 
   &__content {
