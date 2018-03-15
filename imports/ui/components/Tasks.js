@@ -7,7 +7,6 @@ import Task from '../components/Task'
 import './Tasks.scss'
 
 const tasksSort = (a, b) => {
-  console.log('sort')
   switch (this.sort) {
     case 'Priority':
       return a.priority - b.priority
