@@ -15,7 +15,7 @@ const lbl = label => {
 const LastChats = ({className = '', chats = []}) => (
   <div>
     {
-      chats.map(chat => <div className='wrapper'><CustomAvatar key={chat.id} className={className} check={chat.check} /> {lbl(chat.name)} </div>)
+      chats.map(chat => <div key={chat.id} className='wrapper'><CustomAvatar className={className} check={chat.check} /> {lbl(chat.name)} </div>)
     }
   </div>
 )

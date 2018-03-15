@@ -1,15 +1,8 @@
 import React from 'react'
 
-// import CustomAvatar from '../components/CustomAvatar'
 import LinearProgress from 'material-ui/LinearProgress'
-// import RaisedButton from 'material-ui/RaisedButton'
 import RaisedButton from '../components/RaisedButton'
 import './Task.scss'
-
-// const buttonStyles = {
-//   backroundColor: '#5da6ff',
-//   color: 'white'
-// }
 
 const Task = ({task}) => (
   <React.Fragment>
@@ -31,7 +24,6 @@ const Task = ({task}) => (
             <span className='task__point' />
             {task.status}
           </div>
-          {/* <CustomAvatar src={task.avatar} className='task__avatar' /> */}
           <span className='task__avatar' />
           <span className='task__detail'>{task.employee}</span>
           <span className='task__detail'>{'Due date: ' + task.dueDate}</span>

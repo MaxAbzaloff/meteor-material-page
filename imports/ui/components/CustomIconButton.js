@@ -9,8 +9,8 @@ const iconStyle = {
   borderRadius: '50%'
 }
 
-const CustomIconButton = ({className = ''}) => (
-  <IconButton className={className} iconStyle={iconStyle}>
+const CustomIconButton = ({className = '', onClick}) => (
+  <IconButton className={className} iconStyle={iconStyle} onClick={onClick} >
     <FontIcon className='material-icons'>add_circle</FontIcon>
   </IconButton>
 )
