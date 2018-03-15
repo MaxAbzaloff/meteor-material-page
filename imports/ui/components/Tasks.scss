@@ -46,6 +46,10 @@ $tasks-green-color: #55d1a4;
     position: relative;
     top: 0.5rem;
     color: $tasks-gray-color;
+
+    &_active {
+      transform: rotate(180deg)
+    }
   }
 
   &__details {

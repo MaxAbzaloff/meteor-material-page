@@ -12,6 +12,10 @@ import Tab from './components/Tab'
 import './TasksContainer.scss'
 
 class TasksContainer extends React.Component {
+  state = {
+    sort: null
+  }
+
   componentWillMount () {
     const tasks = [{
       id: 1,
@@ -45,6 +49,21 @@ class TasksContainer extends React.Component {
 
   onFilterClick (event) {
     event.preventDefault()
+    if (event.target.localName === 'span') {
+      [...event.target.parentNode.childNodes].map(child => child !== event.target ? child.childNodes[1].classList.remove('tasks__filter-icon_active') : '')
+      event.target.childNodes[1].classList.toggle('tasks__filter-icon_active')
+      let sort = [...event.target.childNodes[1].classList].includes('tasks__filter-icon_active') ? event.target.childNodes[0].textContent : null
+      this.setState({
+        sort: sort
+      })
+    } else if (event.target.localName === 'i') {
+      [...event.target.parentNode.parentNode.childNodes].map(child => child.childNodes[1] !== event.target ? child.childNodes[1].classList.remove('tasks__filter-icon_active') : '')
+      event.target.classList.toggle('tasks__filter-icon_active')
+      let sort = [...event.target.classList].includes('tasks__filter-icon_active') ? event.target.prevSibling : null
+      this.setState({
+        sort: sort
+      })
+    }
   }
 
   addNewTask (event) {
@@ -75,7 +94,7 @@ class TasksContainer extends React.Component {
           activeClassName='tab tab_active'
           stresserClassName='tasks-container__stresser'>
           <Tab label='new(2)' className='tasks-container__tab'>
-            <Tasks tasks={this.props.tasks} onFilterClick={this.onFilterClick.bind(this)} addNewTask={this.addNewTask.bind(this)} />
+            <Tasks tasks={this.props.tasks} sort={this.state.sort} onFilterClick={this.onFilterClick.bind(this)} addNewTask={this.addNewTask.bind(this)} />
           </Tab>
           <Tab label='in progress(6)' className='tasks-container__tab'>
             in progress

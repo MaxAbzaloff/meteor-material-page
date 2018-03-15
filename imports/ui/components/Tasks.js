@@ -6,6 +6,21 @@ import Task from '../components/Task'
 
 import './Tasks.scss'
 
+const tasksSort = (a, b) => {
+  console.log('sort')
+  switch (this.sort) {
+    case 'Priority':
+      return a.priority - b.priority
+    case 'Asignee':
+      return a.employee - b.employee
+    case 'Recent':
+      return a.createdAt - b.createdAt
+
+    default:
+      return 1
+  }
+}
+
 const Tasks = props => (
   <div className='tasks'>
     <div className='tasks__control-panel'>
@@ -20,7 +35,7 @@ const Tasks = props => (
     </div>
     <div className='tasks__stack'>
       {
-        props.tasks.map(task => <Task key={task.id} task={task} />)
+        props.tasks.sort(tasksSort.bind({sort: props.sort})).map(task => <Task key={task.id} task={task} />)
       }
     </div>
   </div>
